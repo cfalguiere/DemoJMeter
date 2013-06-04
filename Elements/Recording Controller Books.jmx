@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.3" jmeter="2.8 r1393162">
+  <hashTree>
+    <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller" enabled="true"/>
+    <hashTree>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">gris.local</stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <boolProp name="HTTPSampler.image_parser">true</boolProp>
+        <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+        <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="A01-LandPage" enabled="true">
+        <boolProp name="TransactionController.parent">false</boolProp>
+      </TransactionController>
+      <hashTree/>
+      <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="A02-ViewBook" enabled="true">
+        <boolProp name="TransactionController.parent">false</boolProp>
+      </TransactionController>
+      <hashTree/>
+      <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="A03-NewBookForm" enabled="true">
+        <boolProp name="TransactionController.parent">false</boolProp>
+      </TransactionController>
+      <hashTree/>
+      <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="A04-NewBookSubmit" enabled="true">
+        <boolProp name="TransactionController.parent">false</boolProp>
+      </TransactionController>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

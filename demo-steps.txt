@@ -1,0 +1,76 @@
+-1-
+montrer creation proxy puis charger
+capture sans transaction recorder
+capture avec
+
+-2- 
+thread group et rejouter
+
+-3-
+think time
+avec test action 
+
+-4-
+variabiliser la lecture 
+extraction 
+echantillon de debogage
+assertion Show book 
+
+-5-
+csv 
+variable et fonction
+
+-6- 
+units et loops 
+cookie chaque iteration
+
+
+
+-----
+
+
+démarrer tomcat
+cd /Tools/apache-tomcat-7.0.29/bin 
+startup.sh
+
+l'url est 
+http://localhost:8080/book-store/book/list
+localhost ne passe pas par le proxy
+http://gris.local:8080/book-store/book/list
+
+arrêt du tomcat
+shutdown.sh
+ou kill
+
+
+proxy 
+enregistrer sans rien 
+creer un plan 
+ajouter les transactions, un http default a gris.local
+enregistrer
+
+ajouter un threadgroup et deplacer le test
+ajouter les managers
+ajouter les listeners
+
+run
+configurer les generate parent sample
+
+supprimer les ressources et configurer en retrieve
+
+parametrer l'id lu 
+
+ajouter un user variable testHome et un csv
+
+parametrer les données entrées (et encoder)
+
+supprimer le show apres save
+et montrer le follow redirect
+
+ajouter assertion sur les pages Book List / Book Show
+avec le redirect, extraire SAVE_OK et faire une assertion sur la variable + ignore status@:wq
+ 
+
+ajouter des thinktime et inclure le temps
+
+iajouter des users et montrer le resultat
